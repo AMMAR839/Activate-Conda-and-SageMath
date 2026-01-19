@@ -157,33 +157,4 @@ rm -f ~/.condarc
 
 ---
 
-## 6) Troubleshooting singkat
 
-### “conda: command not found”
-
-Biasanya conda belum ter-load di shell. Jalankan:
-
-```bash
-source ~/miniforge3/etc/profile.d/conda.sh
-conda --version
-```
-
-### Salah ketik
-
-* Yang benar: `conda activate` (bukan `conda activated`)
-
----
-
-Kalau kamu mau, kirim output dari:
-
-```bash
-ls -d ~/miniforge3 ~/miniconda3 ~/anaconda3 2>/dev/null
-```
-
-Aku bisa sesuaikan bagian uninstall supaya tepat sesuai lokasi instalasi conda kamu.
-
-[1]: https://doc.sagemath.org/html/en/installation/conda.html?utm_source=chatgpt.com "Install from conda-forge"
-[2]: https://docs.conda.io/projects/conda/en/stable/commands/remove.html?utm_source=chatgpt.com "conda remove"
-[3]: https://docs.conda.io/projects/conda/en/stable/commands/env/remove.html?utm_source=chatgpt.com "conda env remove"
-[4]: https://github.com/conda-forge/miniforge?utm_source=chatgpt.com "conda-forge/miniforge"
-[5]: https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html?utm_source=chatgpt.com "Installing on Linux"
